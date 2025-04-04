@@ -14,7 +14,7 @@ public class BinaryTree {
     }
 
     public TreeNode insertLevelOrder(int[] arr, TreeNode root, int i) {
-        if (i < arr.length) {
+        if (i < arr.length && arr[i] != -1) {
             TreeNode temp = new TreeNode(arr[i]);
             root = temp;
             root.left = insertLevelOrder(arr, root.left, 2 * i + 1);
@@ -32,14 +32,12 @@ public class BinaryTree {
     }
 
     public TreeNode createTree(int[] nodes) {
-        BinaryTree bt = new BinaryTree();
-        bt.root = bt.insertLevelOrder(nodes, bt.root, 0);
-        bt.inOrder(bt.root);
-
-        return bt.root;
+        TreeNode root = insertLevelOrder(nodes, null, 0);
+        inOrder(root);
+        return root;
     }
 
-    public void BFS() {
+    public void BFS(TreeNode root) {
         Queue<TreeNode> q = new LinkedList<>();
 
         q.add(root);
