@@ -6,7 +6,8 @@ class Main {
 
         RunQuestion questions = new RunQuestion();
         // questions.run1123();
-        questions.run368();
+        // questions.run368();
+        questions.run3396();
     }
 
 }
