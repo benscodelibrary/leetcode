@@ -47,4 +47,24 @@ public class RunQuestion {
         System.out.println("The question and answer match for the first call: " + (result1.equals(ans1)));
         System.out.println("The question and answer match for the second call: " + (result2.equals(ans2)));
     }
+
+    public void run3396() {
+        int[] ex1 = { 1, 2, 3, 4, 2, 3, 3, 5, 7 };
+        int[] ex2 = { 4, 5, 6, 4, 4 };
+        int[] ex3 = { 6, 7, 8, 9 };
+
+        int ans1 = 2;
+        int ans2 = 2;
+        int ans3 = 0;
+
+        Question3396 question = new Question3396();
+
+        int result1 = question.minimumOperations(ex1);
+        int result2 = question.minimumOperations(ex2);
+        int result3 = question.minimumOperations(ex3);
+
+        System.out.println("The question and answer match for the first call: " + (result1 == ans1));
+        System.out.println("The question and answer match for the second call: " + (result2 == ans2));
+        System.out.println("The question and answer match for the third call: " + (result3 == ans3));
+    }
 }
