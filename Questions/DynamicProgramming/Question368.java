@@ -1,4 +1,4 @@
-package Questions;
+package Questions.DynamicProgramming;
 
 import java.util.ArrayList;
 import java.util.Arrays;
