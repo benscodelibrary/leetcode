@@ -1,4 +1,4 @@
-package Questions;
+package Questions.SlidingWindow;
 
 import java.util.HashMap;
 import java.util.Map;

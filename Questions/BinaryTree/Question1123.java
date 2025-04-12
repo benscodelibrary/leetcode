@@ -1,4 +1,4 @@
-package Questions;
+package Questions.BinaryTree;
 
 import DataStructures.Pair;
 import DataStructures.TreeNode;

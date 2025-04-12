@@ -6,6 +6,12 @@ import java.util.List;
 
 import DataStructures.BinaryTree;
 import DataStructures.TreeNode;
+import Questions.Array.Question215;
+import Questions.Array.Question3375;
+import Questions.Array.Question3396;
+import Questions.BinaryTree.Question1123;
+import Questions.DynamicProgramming.Question368;
+import Questions.SlidingWindow.Question3;
 
 public class RunQuestion {
 
@@ -106,6 +112,30 @@ public class RunQuestion {
         int result1 = question.lengthOfLongestSubstring(ex1);
         int result2 = question.lengthOfLongestSubstring(ex2);
         int result3 = question.lengthOfLongestSubstring(ex3);
+
+        System.out.println("The question and answer match for the first call: " + (result1 == ans1));
+        System.out.println("The question and answer match for the second call: " + (result2 == ans2));
+        System.out.println("The question and answer match for the third call: " + (result3 == ans3));
+    }
+
+    public void run215() {
+        int[] ex1 = { 3,2,1,5,6,4 };
+        int[] ex2 = { 3,2,3,1,2,4,5,5,6 };
+        int[] ex3 = { 9, 7, 5, 3 };
+
+        int k1 = 2;
+        int k2 = 4;
+        int k3 = 3;
+
+        int ans1 = 5;
+        int ans2 = 4;
+        int ans3 = 5;
+
+        Question215 question = new Question215();
+
+        int result1 = question.findKthLargest(ex1, k1);
+        int result2 = question.findKthLargest(ex2, k2);
+        int result3 = question.findKthLargest(ex3, k3);
 
         System.out.println("The question and answer match for the first call: " + (result1 == ans1));
         System.out.println("The question and answer match for the second call: " + (result2 == ans2));
