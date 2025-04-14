@@ -1,4 +1,4 @@
-package Questions.Array;
+package Array;
 
 // The problem is titled: Minimum Number of Operations to Make Elements in Array Distinct
 

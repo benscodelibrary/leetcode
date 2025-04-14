@@ -1,4 +1,4 @@
-package Questions.Array;
+package Array;
 
 import java.util.PriorityQueue;
 
@@ -10,13 +10,13 @@ import java.util.PriorityQueue;
 
 public class Question215 {
     public int findKthLargest(int[] nums, int k) {
-        PriorityQueue<Integer> queue = new PriorityQueue<>((a,b) -> Integer.compare(b, a));
+        PriorityQueue<Integer> queue = new PriorityQueue<>((a, b) -> Integer.compare(b, a));
 
-        for(int num : nums){
+        for (int num : nums) {
             queue.add(num);
         }
 
-        for(int i = 1; i < k; i++){
+        for (int i = 1; i < k; i++) {
             queue.poll();
         }
 
