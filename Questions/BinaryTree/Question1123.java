@@ -1,4 +1,4 @@
-package Questions.BinaryTree;
+package BinaryTree;
 
 import DataStructures.Pair;
 import DataStructures.TreeNode;
@@ -7,7 +7,7 @@ import DataStructures.TreeNode;
 
 // The problem statement: Given the root of a binary tree, return the lowest common 
 // ancestor of its deepest leaves
-class Question1123 {
+public class Question1123 {
 
     public TreeNode lcsDeepestLeaves(TreeNode root) {
         return dfs(root).getKey();

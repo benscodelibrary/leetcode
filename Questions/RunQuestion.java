@@ -1,17 +1,17 @@
-package Questions;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import BackTracking.Question40;
 import DataStructures.BinaryTree;
 import DataStructures.TreeNode;
-import Questions.Array.Question215;
-import Questions.Array.Question3375;
-import Questions.Array.Question3396;
-import Questions.BinaryTree.Question1123;
-import Questions.DynamicProgramming.Question368;
-import Questions.SlidingWindow.Question3;
+import Array.Question215;
+import Array.Question3375;
+import Array.Question3396;
+import BinaryTree.Question1123;
+import DynamicProgramming.Question368;
+import SlidingWindow.Question3;
 
 public class RunQuestion {
 
@@ -119,8 +119,8 @@ public class RunQuestion {
     }
 
     public void run215() {
-        int[] ex1 = { 3,2,1,5,6,4 };
-        int[] ex2 = { 3,2,3,1,2,4,5,5,6 };
+        int[] ex1 = { 3, 2, 1, 5, 6, 4 };
+        int[] ex2 = { 3, 2, 3, 1, 2, 4, 5, 5, 6 };
         int[] ex3 = { 9, 7, 5, 3 };
 
         int k1 = 2;
@@ -140,5 +140,42 @@ public class RunQuestion {
         System.out.println("The question and answer match for the first call: " + (result1 == ans1));
         System.out.println("The question and answer match for the second call: " + (result2 == ans2));
         System.out.println("The question and answer match for the third call: " + (result3 == ans3));
+    }
+
+    public void run40() {
+        int[] ex1 = { 1, 2, 3 };
+        int[] ex2 = { 10, 1, 2, 7, 6, 1, 5 };
+        int[] ex3 = { 2, 5, 2, 1, 2 };
+
+        int target1 = 3;
+        int target2 = 8;
+        int target3 = 5;
+
+        List<List<Integer>> ans1 = new ArrayList<>();
+        List<List<Integer>> ans2 = new ArrayList<>();
+        List<List<Integer>> ans3 = new ArrayList<>();
+
+        ans1.add(new ArrayList<>(Arrays.asList(1, 2)));
+        ans1.add(new ArrayList<>(Arrays.asList(3)));
+
+        ans2.add(new ArrayList<>(Arrays.asList(1, 1, 6)));
+        ans2.add(new ArrayList<>(Arrays.asList(1, 2, 5)));
+        ans2.add(new ArrayList<>(Arrays.asList(1, 7)));
+        ans2.add(new ArrayList<>(Arrays.asList(2, 6)));
+
+        ans3.add(new ArrayList<>(Arrays.asList(1, 2, 2)));
+        ans3.add(new ArrayList<>(Arrays.asList(5)));
+
+        Question40 question = new Question40();
+
+        List<List<Integer>> result1 = question.combinationSum2(ex1, target1);
+        // List<List<Integer>> result2 = question.combinationSum2(ex2, target2);
+        // List<List<Integer>> result3 = question.combinationSum2(ex3, target3);
+
+        System.out.println("The question and answer match for the first call: " + (result1 == ans1));
+        // System.out.println("The question and answer match for the second call: " +
+        // (result2 == ans2));
+        // System.out.println("The question and answer match for the third call: " +
+        // (result3 == ans3));
     }
 }
